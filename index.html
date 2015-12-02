@@ -1,0 +1,28 @@
+<html>
+  <head>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="search-view">    
+    </div>
+    <div class="add-view invisible">
+      <button onClick="toggleAdd(); return false;">X</button> 
+      <input name="Title" placeholder="Title" />
+      <input name="Reporter" placeholder="Reporter" />      
+      <input type="file" name="Photo" />
+      <textarea name="Details" placeholder="Details"></textarea>
+    </div>
+    <div class="list-view visible">
+      <button onClick="toggleAdd(); return false;">Add</button> 
+      <div class="update">
+  	    <div class="datetime">{{DateTime}}</div>
+  	    <div class="submitter">{{Reporter}}</div>	    
+  			<img name="Photo" />
+        <h2>{{Title}}</h2>
+      	<p>{{Details}}</p>    
+    	</div>
+    </div>
+
+    <script src="scripts.js"></script>
+  </body>
+</html>
